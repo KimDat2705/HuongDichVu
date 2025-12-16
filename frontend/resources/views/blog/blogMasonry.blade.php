@@ -35,7 +35,7 @@
 
                                                 <a href="{{ route('blog.Masonry') }}">
 
-                                                    <span>25 February 2018</span></a></span></span>
+                                                    <span>25 -05 - 2025</span></a></span></span>
 
                                         <span class="bp-mini__stat-wrap">
 

@@ -48,6 +48,8 @@ class ProductController extends Controller
         $latest     = Http::get("$this->api/products/latest")->json();
         $featured   = Http::get("$this->api/products/top-rated")->json();
 
+
+
         $productsByCate = [];
         foreach ($categories as $cate) {
             $productsByCate[$cate['id']] =

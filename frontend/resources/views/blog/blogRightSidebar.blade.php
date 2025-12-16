@@ -35,7 +35,7 @@
 
                                                 <a href="{{ route('blog.RightSidebar') }}">
 
-                                                    <span>25 February 2018</span></a></span></span>
+                                                    <span>25 - 05 - 2025</span></a></span></span>
 
                                         <span class="bp__stat-wrap">
 
@@ -55,28 +55,28 @@
 
                                             <span class="bp__category">
 
-                                                <a href="{{ route('blog.RightSidebar') }}">Learning</a>
+                                                <a href="{{ route('blog.RightSidebar') }}">Học Thuật</a>
 
-                                                <a href="{{ route('blog.RightSidebar') }}">News</a>
+                                                <a href="{{ route('blog.RightSidebar') }}">Tin Tức</a>
 
-                                                <a href="{{ route('blog.RightSidebar') }}">Health</a></span></span>
+                                                <a href="{{ route('blog.RightSidebar') }}">Sức Khỏe</a></span></span>
                                     </div>
 
                                     <span class="bp__h1">
 
-                                        <a href="{{ route('blog.detail') }}">Life is an extraordinary Adventure</a></span>
+                                        <a href="{{ route('blog.detail') }}">Cuộc sống là một chuyến phiêu lưu phi thường</a></span>
 
-                                    <span class="bp__h2">A post with the image</span>
+                                    <span class="bp__h2">Bài đăng có kèm hình ảnh</span>
                                     <div class="blog-t-w">
 
                                         <a class="gl-tag btn--e-transparent-hover-brand-b-2"
-                                            href="{{ route('blog.RightSidebar') }}">Travel</a>
+                                            href="{{ route('blog.RightSidebar') }}">Du lịch</a>
 
                                         <a class="gl-tag btn--e-transparent-hover-brand-b-2"
-                                            href="{{ route('blog.RightSidebar') }}">Culture</a>
+                                            href="{{ route('blog.RightSidebar') }}">Văn hóa</a>
 
                                         <a class="gl-tag btn--e-transparent-hover-brand-b-2"
-                                            href="{{ route('blog.RightSidebar') }}">Place</a>
+                                            href="{{ route('blog.RightSidebar') }}">Địa điểm</a>
                                     </div>
                                     <p class="bp__p">Lorem Ipsum is simply dummy text of the printing and typesetting
                                         industry. Lorem Ipsum has been the industry's standard dummy text.</p>

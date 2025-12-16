@@ -1,19 +1,19 @@
 <?php
 
+ob_start(); // chống lỗi headers already sent
+
 // ===============================================
 // CORS CONFIG
 // ===============================================
 header("Access-Control-Allow-Origin: http://127.0.0.1:8000");
 header("Access-Control-Allow-Credentials: true");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
-header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 
-// PRE-FLIGHT REQUEST (Browser kiểm tra trước)
-if ($_SERVER["REQUEST_METHOD"] === "OPTIONS") {
+if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     http_response_code(200);
-    exit;
+    exit();
 }
-
 
 // ===============================================
 // AUTOLOAD + ENV
@@ -33,13 +33,11 @@ $auth   = new AuthController();
 $uri    = parse_url($_SERVER["REQUEST_URI"], PHP_URL_PATH);
 $method = $_SERVER["REQUEST_METHOD"];
 
-// Chuẩn hoá URI để tránh lỗi khi có dấu "/"
 $uri = rtrim($uri, "/");
 
 
 // ===============================================
 // ROUTE MAPPING
-// Hỗ trợ cả route cũ và route mới của FE
 // ===============================================
 $routes = [
     "/register"      => "register",
@@ -54,19 +52,15 @@ $routes = [
 
 
 // ===============================================
-// CHECK ROUTE (POST /register, POST /login)
+// CHECK ROUTE
 // ===============================================
 if (isset($routes[$uri])) {
 
     $action = $routes[$uri];
 
-    // ------------------------------
     // REGISTER
-    // ------------------------------
     if ($action === "register" && $method === "POST") {
-
         $data = json_decode(file_get_contents("php://input"), true);
-
         echo json_encode(
             $auth->register(
                 $data["fullname"] ?? "",
@@ -78,14 +72,9 @@ if (isset($routes[$uri])) {
         exit;
     }
 
-
-    // ------------------------------
     // LOGIN
-    // ------------------------------
     if ($action === "login" && $method === "POST") {
-
         $data = json_decode(file_get_contents("php://input"), true);
-
         echo json_encode(
             $auth->login(
                 $data["email"] ?? "",
@@ -96,10 +85,7 @@ if (isset($routes[$uri])) {
         exit;
     }
 
-
-    // ------------------------------
-    // GET USER (JWT)
-    // ------------------------------
+    // GET USER
     if ($action === "me" && $method === "GET") {
 
         $headers = getallheaders();
@@ -130,7 +116,6 @@ if (isset($routes[$uri])) {
 
 // ===============================================
 // VERIFY EMAIL
-// URL: /verify?token=...
 // ===============================================
 if ($uri === "/verify" && $method === "GET") {
 
@@ -162,3 +147,4 @@ echo json_encode([
     "method"   => $method,
 ], JSON_UNESCAPED_UNICODE);
 
+ob_end_flush();

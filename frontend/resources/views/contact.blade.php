@@ -21,11 +21,11 @@
                             <ul class="breadcrumb__list">
                                 <li class="has-separator">
 
-                                    <a href="{{ route('shop.index') }}">Home</a>
+                                    <a href="{{ route('shop.index') }}">Trang Chủ</a>
                                 </li>
                                 <li class="is-marked">
 
-                                    <a href="{{ route('contact') }}">Contact</a>
+                                    <a href="{{ route('contact') }}">Liên Hệ</a>
                                 </li>
                             </ul>
                         </div>
@@ -38,14 +38,21 @@
 
         <!--====== Section 2 ======-->
         <div class="u-s-p-b-60">
-
             <!--====== Section Content ======-->
             <div class="section__content">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="g-map">
-                                <div id="map"></div>
+                                <iframe
+                                    src="https://www.google.com/maps?q=Trường+Đại+học+Kiến+trúc+Hà+Nội&output=embed"
+                                    width="100%"
+                                    height="450"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
                             </div>
                         </div>
                     </div>
@@ -53,6 +60,7 @@
             </div>
             <!--====== End - Section Content ======-->
         </div>
+
         <!--====== End - Section 2 ======-->
 
 
@@ -68,11 +76,9 @@
                                 <div class="contact-o__wrap">
                                     <div class="contact-o__icon"><i class="fas fa-phone-volume"></i></div>
 
-                                    <span class="contact-o__info-text-1">LET'S HAVE A CALL</span>
+                                    <span class="contact-o__info-text-1">SỐ ĐIỆN THOẠI</span>
 
-                                    <span class="contact-o__info-text-2">(+0) 900 901 904</span>
-
-                                    <span class="contact-o__info-text-2">(+0) 900 901 902</span>
+                                    <span class="contact-o__info-text-2">(+84) 824 948 677</span>
                                 </div>
                             </div>
                         </div>
@@ -81,11 +87,10 @@
                                 <div class="contact-o__wrap">
                                     <div class="contact-o__icon"><i class="fas fa-map-marker-alt"></i></div>
 
-                                    <span class="contact-o__info-text-1">OUR LOCATION</span>
+                                    <span class="contact-o__info-text-1">ĐỊA CHỈ</span>
 
-                                    <span class="contact-o__info-text-2">4247 Ashford Drive VA-20006</span>
+                                    <span class="contact-o__info-text-2">57 Phố Đại An, Văn Quán, Hà Đông, Hầ Nội</span>
 
-                                    <span class="contact-o__info-text-2">Virginia US</span>
                                 </div>
                             </div>
                         </div>
@@ -94,11 +99,11 @@
                                 <div class="contact-o__wrap">
                                     <div class="contact-o__icon"><i class="far fa-clock"></i></div>
 
-                                    <span class="contact-o__info-text-1">WORK TIME</span>
+                                    <span class="contact-o__info-text-1">THỜI GIAN LÀM VIỆC</span>
 
-                                    <span class="contact-o__info-text-2">5 Days a Week</span>
+                                    <span class="contact-o__info-text-2">5 Ngày trên tuần</span>
 
-                                    <span class="contact-o__info-text-2">From 9 AM to 7 PM</span>
+                                    <span class="contact-o__info-text-2">Từ 8:30 đến 15:30</span>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +125,7 @@
                         <div class="col-lg-12">
                             <div class="contact-area u-h-100">
                                 <div class="contact-area__heading">
-                                    <h2>Get In Touch</h2>
+                                    <h2>Liên hệ với chúng tôi</h2>
                                 </div>
                                 <form class="contact-f" method="post" action="{{ route('shop.index') }}">
                                     <div class="row">
@@ -131,7 +136,7 @@
 
                                                 <input
                                                     class="input-text input-text--border-radius input-text--primary-style"
-                                                    type="text" id="c-name" placeholder="Name (Required)" required>
+                                                    type="text" id="c-name" placeholder="Họ và Tên (Bắt buộc)" required>
                                             </div>
                                             <div class="u-s-m-b-30">
 
@@ -139,7 +144,7 @@
 
                                                 <input
                                                     class="input-text input-text--border-radius input-text--primary-style"
-                                                    type="text" id="c-email" placeholder="Email (Required)" required>
+                                                    type="text" id="c-email" placeholder="Email (Bắt buộc)" required>
                                             </div>
                                             <div class="u-s-m-b-30">
 
@@ -147,7 +152,7 @@
 
                                                 <input
                                                     class="input-text input-text--border-radius input-text--primary-style"
-                                                    type="text" id="c-subject" placeholder="Subject (Required)" required>
+                                                    type="text" id="c-subject" placeholder="Chủ đề (Required)" required>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-6 u-h-100">
@@ -155,13 +160,13 @@
 
                                                 <label for="c-message"></label><textarea
                                                     class="text-area text-area--border-radius text-area--primary-style"
-                                                    id="c-message" placeholder="Compose a Message (Required)"
+                                                    id="c-message" placeholder="Soạn tin nhắn (Required)"
                                                     required></textarea>
                                             </div>
                                         </div>
                                         <div class="col-lg-12">
 
-                                            <button class="btn btn--e-brand-b-2" type="submit">Send Message</button>
+                                            <button class="btn btn--e-brand-b-2" type="submit">Gửi Tin Nhắn</button>
                                         </div>
                                     </div>
                                 </form>

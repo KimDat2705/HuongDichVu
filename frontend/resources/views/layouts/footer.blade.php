@@ -5,24 +5,24 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="outer-footer__content u-s-m-b-40">
 
-                            <span class="outer-footer__content-title">Contact Us</span>
+                            <span class="outer-footer__content-title">Liên Hệ</span>
                             <div class="outer-footer__text-wrap"><i class="fas fa-home"></i>
 
-                                <span>4247 Ashford Drive Virginia VA-20006 USA</span>
+                                <span>Trường Đại học Kiến trúc Hà Nội</span>
                             </div>
                             <div class="outer-footer__text-wrap"><i class="fas fa-phone-volume"></i>
 
-                                <span>(+0) 900 901 904</span>
+                                <span>(+84) 824 948 677</span>
                             </div>
                             <div class="outer-footer__text-wrap"><i class="far fa-envelope"></i>
 
-                                <span>contact@domain.com</span>
+                                <span>datbk2705@gmail.com</span>
                             </div>
                             <div class="outer-footer__social">
                                 <ul>
                                     <li>
 
-                                        <a class="s-fb--color-hover" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="s-fb--color-hover" href="https://www.facebook.com/kim.at.618517?locale=vi_VN"><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                     <li>
 
@@ -50,28 +50,28 @@
                             <div class="col-lg-6 col-md-6">
                                 <div class="outer-footer__content u-s-m-b-40">
 
-                                    <span class="outer-footer__content-title">Information</span>
+                                    <span class="outer-footer__content-title">Thông Tin</span>
                                     <div class="outer-footer__list-wrap">
                                         <ul>
                                             <li>
 
-                                                <a href="{{ route('cart') }}">Cart</a>
+                                                <a href="{{ route('cart') }}">Giỏ hàng</a>
                                             </li>
                                             <li>
 
-                                                <a href="{{ route('dashboard') }}">Account</a>
+                                                <a href="{{ route('dashboard') }}">Tài khoản</a>
                                             </li>
                                             <li>
 
-                                                <a href="{{ route('shop.side_v2') }}">Manufacturer</a>
+                                                <a href="{{ route('shop.side_v2') }}">Nhà sản xuất</a>
                                             </li>
                                             <li>
 
-                                                <a href="{{ route('dash.payment_option') }}">Finance</a>
+                                                <a href="{{ route('dash.payment_option') }}">Tài chính</a>
                                             </li>
                                             <li>
 
-                                                <a href="{{ route('shop.side_v2') }}">Shop</a>
+                                                <a href="{{ route('shop.side_v2') }}">Cửa hàng</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -81,27 +81,27 @@
                                 <div class="outer-footer__content u-s-m-b-40">
                                     <div class="outer-footer__list-wrap">
 
-                                        <span class="outer-footer__content-title">Our Company</span>
+                                        <span class="outer-footer__content-title">Về Công Ty</span>
                                         <ul>
                                             <li>
 
-                                                <a href="{{ route('about') }}">About us</a>
+                                                <a href="{{ route('about') }}">Giới thiệu</a>
                                             </li>
                                             <li>
 
-                                                <a href="{{ route('contact') }}">Contact Us</a>
+                                                <a href="{{ route('contact') }}">Liên hệ</a>
                                             </li>
                                             <li>
 
-                                                <a href="{{ route('shop.index') }}">Sitemap</a>
+                                                <a href="{{ route('shop.index') }}">Sơ đồ trang web</a>
                                             </li>
                                             <li>
 
-                                                <a href="{{ route('dash.my_order') }}">Delivery</a>
+                                                <a href="{{ route('dash.my_order') }}">Giao hàng</a>
                                             </li>
                                             <li>
 
-                                                <a href="{{ route('shop.side_v2') }}">Store</a>
+                                                <a href="{{ route('shop.side_v2') }}">Hệ thống cửa hàng</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -112,7 +112,7 @@
                     <div class="col-lg-4 col-md-12">
                         <div class="outer-footer__content">
 
-                            <span class="outer-footer__content-title">Join our Newsletter</span>
+                            <span class="outer-footer__content-title">Đăng ký nhận thông báo mới</span>
                             <form class="newsletter">
                                 <div class="u-s-m-b-15">
                                     <div class="radio-box newsletter__radio">
@@ -120,7 +120,7 @@
                                         <input type="radio" id="male" name="gender">
                                         <div class="radio-box__state radio-box__state--primary">
 
-                                            <label class="radio-box__label" for="male">Male</label>
+                                            <label class="radio-box__label" for="male">Nam</label>
                                         </div>
                                     </div>
                                     <div class="radio-box newsletter__radio">
@@ -128,7 +128,7 @@
                                         <input type="radio" id="female" name="gender">
                                         <div class="radio-box__state radio-box__state--primary">
 
-                                            <label class="radio-box__label" for="female">Female</label>
+                                            <label class="radio-box__label" for="female">Nữ</label>
                                         </div>
                                     </div>
                                 </div>
@@ -137,13 +137,12 @@
                                     <label for="newsletter"></label>
 
                                     <input class="input-text input-text--only-white" type="text" id="newsletter"
-                                        placeholder="Enter your Email">
+                                        placeholder="Điền Email của bạn">
 
-                                    <button class="btn btn--e-brand newsletter__btn" type="submit">SUBSCRIBE</button>
+                                    <button class="btn btn--e-brand newsletter__btn" type="submit">Đăng Ký</button>
                                 </div>
 
-                                <span class="newsletter__text">Subscribe to the mailing list to receive updates on
-                                    promotions, new arrivals, discount and coupons.</span>
+                                <span class="newsletter__text">Đăng ký danh sách email để nhận thông báo về khuyến mãi, sản phẩm mới, giảm giá và mã ưu đãi.</span>
                             </form>
                         </div>
                     </div>
@@ -156,22 +155,6 @@
                     <div class="col-lg-12">
                         <div class="lower-footer__content">
                             <div class="lower-footer__copyright">
-
-                                <span>Copyright © 2018</span>
-
-                                <a href="{{ route('shop.index') }}">Reshop</a>
-
-                                <span>All Right Reserved</span>
-                            </div>
-                            <div class="lower-footer__payment">
-                                <ul>
-                                    <li><i class="fab fa-cc-stripe"></i></li>
-                                    <li><i class="fab fa-cc-paypal"></i></li>
-                                    <li><i class="fab fa-cc-mastercard"></i></li>
-                                    <li><i class="fab fa-cc-visa"></i></li>
-                                    <li><i class="fab fa-cc-discover"></i></li>
-                                    <li><i class="fab fa-cc-amex"></i></li>
-                                </ul>
                             </div>
                         </div>
                     </div>

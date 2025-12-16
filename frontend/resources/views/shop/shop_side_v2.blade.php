@@ -19,13 +19,13 @@
                     <div class="shop-w-master">
                         <h1 class="shop-w-master__heading u-s-m-b-30"><i class="fas fa-filter u-s-m-r-8"></i>
 
-                            <span>FILTERS</span>
+                            <span>BỘ LỌC</span>
                         </h1>
                         <div class="shop-w-master__sidebar">
                             <div class="u-s-m-b-30">
                                 <div class="shop-w shop-w--style">
                                     <div class="shop-w__intro-wrap">
-                                        <h1 class="shop-w__h">CATEGORY</h1>
+                                        <h1 class="shop-w__h">DANH MỤC</h1>
 
                                         <span class="fas fa-minus shop-w__toggle" data-target="#s-category"
                                             data-toggle="collapse"></span>
@@ -47,7 +47,7 @@
                             <div class="u-s-m-b-30">
                                 <div class="shop-w shop-w--style">
                                     <div class="shop-w__intro-wrap">
-                                        <h1 class="shop-w__h">PRICE</h1>
+                                        <h1 class="shop-w__h">GIÁ</h1>
 
                                         <span class="fas fa-minus shop-w__toggle" data-target="#s-price"
                                             data-toggle="collapse"></span>
@@ -70,13 +70,13 @@
                                                 <div>
                                                     <input class="input-text input-text--primary-style" type="text"
                                                         name="price_min" id="price-min"
-                                                        value="{{ request('price_min') }}" placeholder="Min">
+                                                        value="{{ request('price_min') }}" placeholder="Nhỏ nhất">
                                                 </div>
 
                                                 <div>
                                                     <input class="input-text input-text--primary-style" type="text"
                                                         name="price_max" id="price-max"
-                                                        value="{{ request('price_max') }}" placeholder="Max">
+                                                        value="{{ request('price_max') }}" placeholder="Lớn nhất">
                                                 </div>
 
                                                 <div>
@@ -98,22 +98,22 @@
                             <div class="shop-p__tool-style">
                                 <div class="tool-style__group u-s-m-b-8">
 
-                                    <span class="js-shop-grid-target is-active">Grid</span>
+                                    <span class="js-shop-grid-target is-active">Dạng lưới</span>
 
-                                    <span class="js-shop-list-target">List</span>
+                                    <span class="js-shop-list-target">Dạng danh sách</span>
                                 </div>
                                 <form>
                                     <div class="tool-style__form-wrap">
                                         <select class="select-box select-box--transparent-b-2"
                                             data-base-url="{{ request()->url() }}?{{ http_build_query(request()->except(['limit'])) }}"
                                             onchange="location.href = this.dataset.baseUrl + '&limit=' + this.value;">
-                                            <option value="8" {{ request('limit') == 8 ? 'selected' : '' }}>Show:
+                                            <option value="8" {{ request('limit') == 8 ? 'selected' : '' }}>Hiển thị:
                                                 8</option>
-                                            <option value="12" {{ request('limit') == 12 ? 'selected' : '' }}>Show:
+                                            <option value="12" {{ request('limit') == 12 ? 'selected' : '' }}>Hiển thị:
                                                 12</option>
-                                            <option value="16" {{ request('limit') == 16 ? 'selected' : '' }}>Show:
+                                            <option value="16" {{ request('limit') == 16 ? 'selected' : '' }}>Hiển thị:
                                                 16</option>
-                                            <option value="28" {{ request('limit') == 28 ? 'selected' : '' }}>Show:
+                                            <option value="28" {{ request('limit') == 28 ? 'selected' : '' }}>Hiển thị:
                                                 28</option>
 
                                         </select>
@@ -232,7 +232,7 @@
 </div>
 <!--====== End - App Content ======-->
 <!--====== Quick Look Modal ======-->
-<div class="modal fade" id="quick-look">
+<!-- <div class="modal fade" id="quick-look">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content modal--shadow">
 
@@ -241,7 +241,7 @@
                 <div class="row">
                     <div class="col-lg-5">
 
-                        <!--====== Product Breadcrumb ======-->
+                        
                         <div class="pd-breadcrumb u-s-m-b-30">
                             <ul class="pd-breadcrumb__list">
                                 <li class="has-separator">
@@ -262,10 +262,10 @@
                                 </li>
                             </ul>
                         </div>
-                        <!--====== End - Product Breadcrumb ======-->
+                        
 
 
-                        <!--====== Product Detail ======-->
+                        
                         <div class="pd u-s-m-b-30">
                             <div class="pd-wrap">
                                 <div id="js-product-detail-modal">
@@ -316,11 +316,11 @@
                                 </div>
                             </div>
                         </div>
-                        <!--====== End - Product Detail ======-->
+                        
                     </div>
                     <div class="col-lg-7">
 
-                        <!--====== Product Right Side Details ======-->
+                        
                         <div class="pd-detail">
                             <div>
 
@@ -410,7 +410,7 @@
                                     <div class="pd-detail-inline-2">
                                         <div class="u-s-m-b-15">
 
-                                            <!--====== Input Counter ======-->
+                                            
                                             <div class="input-counter">
 
                                                 <span class="input-counter__minus fas fa-minus"></span>
@@ -420,7 +420,7 @@
 
                                                 <span class="input-counter__plus fas fa-plus"></span>
                                             </div>
-                                            <!--====== End - Input Counter ======-->
+                                            
                                         </div>
                                         <div class="u-s-m-b-15">
 
@@ -448,18 +448,18 @@
                                 </ul>
                             </div>
                         </div>
-                        <!--====== End - Product Right Side Details ======-->
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!--====== End - Quick Look Modal ======-->
 
 
 <!--====== Add to Cart Modal ======-->
-<div class="modal fade" id="add-to-cart">
+<!-- <div class="modal fade" id="add-to-cart">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content modal-radius modal-shadow">
 
@@ -508,7 +508,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!--====== End - Add to Cart Modal ======-->
 <script>
     document.addEventListener("DOMContentLoaded", function() {
