@@ -145,6 +145,5 @@ echo json_encode([
     "status"   => "Auth service running",
     "endpoint" => $uri,
     "method"   => $method,
-], JSON_UNESCAPED_UNICODE);
 
-ob_end_flush();
+], JSON_UNESCAPED_UNICODE);

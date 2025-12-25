@@ -30,10 +30,11 @@
     <div id="app"> {{-- Thẻ #app bao bọc header, content, footer --}}
 
         {{-- SỬA LẠI ĐƯỜNG DẪN INCLUDE CHO ĐÚNG --}}
-        @include('layouts.header')
+        @include('layouts.admin_header')
 
         {{-- Nội dung của trang con (như detail.blade.php) sẽ vào đây --}}
         @yield('content')
+
         {{-- SỬA LẠI ĐƯỜNG DẪN INCLUDE CHO ĐÚNG --}}
         @include('layouts.footer')
 
@@ -59,8 +60,6 @@
     <!--====== App ======-->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-
-    @yield('scripts')
 
     <noscript>
         <div class="app-setting">
